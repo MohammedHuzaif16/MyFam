@@ -1,0 +1,248 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 20px 120px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 0 15px 4px lightgray;
+    justify-content: space-between;
+}
+header>a{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: 35px;
+}
+
+header nav ul li:hover a{
+    color: #006fbe;
+}
+
+
+
+/* SLIDER SECTION */
+
+.slider{
+    width: 100%;
+    height: 530px;
+    background-image: url('	https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 130%;
+    animation-name:carous;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    filter: contrast(130%);
+}
+
+@keyframes carous{
+    0% {background-image: url('	https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg');}
+    33%{background-image: url('	https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg');}
+    66%{background-image: url('	https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg');}
+}
+
+
+/* ABOUT MY FAMILY SECTION */
+
+.about-me{
+/* border: 1px solid black; */
+text-align: center;
+padding: 20px 120px;
+font-size: 15px;
+letter-spacing: 1px;
+/* height: 300px; */
+}
+.about-me h1{
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.about-me-fam{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+
+.about-mefam-img{
+    /* border: 1px solid yellow; */
+    width: 49%;
+}
+
+
+.about-mefam-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-mefam-text{
+    width: 50%;
+    text-align: left;
+    padding: 5px 0;
+    /* border: 1px solid green; */
+    list-style-position: inside;
+    font-size: 15px;
+}
+.about-mefam-text p{
+    margin-bottom: 10px;
+    line-height: 30px;
+
+}
+.about-mefam-text ul{
+    margin: 10px 0;
+    padding: 0 20px;
+}
+.about-mefam-text ul li{
+    line-height: 30px;
+    list-style: none;
+}
+
+.about-mefam-text a{
+    display: inline-block;
+    padding: 10px 30px;
+    /* background-color: lightblue; */
+    border: 2px solid lightblue;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+/* SKILLS SECTION */
+.skills{
+    margin: 50px 0;
+    width: 100%;
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px 30px;
+}
+
+.skill{
+    text-align: center;
+    /* justify-self: center; */
+
+}
+.skill a{
+    font-size: 23px;
+    font-weight: 900;
+}
+.skill p{
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400px;
+}
+.skills .skill-icon{
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 2px 0 60px 10px lightgray;
+    margin-bottom: 25px;
+    /* padding: 20px 1px; */
+}
+.skills .skill-icon i{
+    font-size: 40px;
+    color: #006fbe;
+}
+
+/* RECENT PHOTOS */
+.recent{
+    padding: 0 120px;
+    margin: 40px 0;
+    text-align: center;
+}
+.recent h1{
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.recent p{
+    font-size: 16px;
+    margin: 25px 0;
+    line-height: 30px;
+}
+.recent .photo{
+    /* border: 10px solid black; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows: repeat(1,200px); */
+    gap: 0 20px;
+    margin: 10px 0 60px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.main-footer{
+    background-color: #1d284b;
+    text-align: center;
+    padding:20px 120px 40px;
+    color: white;
+}
+
+.main-footer h1{
+    font-size: 40px;
+    margin: 25px 0 15px;
+
+}
+
+.main-footer a{
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+.main-footer p{
+    font-size: 17px;
+    margin: 10px 0 15px;
+}
+
+.main-footer .icons{
+    padding: 20px;
+    margin: 30px 0;
+
+
+} 
+
+.main-footer .icons i{
+    font-size: 17px;
+    margin:0 10px;
+    padding: 10px 13px;
+    background-color: #006fbe;
+    border-radius: 50%;
+    
+}
+.main-footer .bold{
+    font-weight: bolder;
+}
